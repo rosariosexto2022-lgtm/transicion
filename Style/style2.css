@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Parisienne&display=swap');
+
+body{
+background-color: hsl(200, 18%, 97%);
+
+}
+
+#cajaprincipal{
+    background-color: lab(79.54% 29.66 -30.93);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 30px;
+    text-align: center;
+
+
+}
+
+#botones {
+    display: flex;
+    margin: 23px;
+    text-align: center; 
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 1.7em;
+}
+
+.miboton{
+
+    border-width: 2px;
+    border-radius: 10px;
+    margin: 13px;
+    width: 125px;
+    height: 40px;
+    text-align: center;
+    background-color: #fde6ff;
+    font-family: "Barlow Condensed", sans-serif;
+    box-shadow: 0 4px 8px 0 hsla(276, 100%, 50%, 0.356), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
+   
+      
+}
+
+.miboton:hover{
+    background-color: #ffb9f0;
+    border: #717171;
+    border-radius: 50px;
+
+}
+
+
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 900px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 13px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 8px;
+  width: 8px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+
+
+
+
+
+
+
+
+
+header {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 15px 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: #ff6b6b;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #555;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #4d96ff;
+}
+
+/* 🖼️ Estilos del Carrusel */
+.slideshow-container {
+    max-width: 900px;
+    position: relative;
+    margin: 30px auto 10px auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.mySlides {
+    display: none;
+    height: 300px;
+}
+
+/* Diseños coloridos de fondo para los banners del carrusel */
+.slide-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.banner-1 { background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%); }
+.banner-2 { background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%); color: #2c3e50; }
+.banner-3 { background: linear-gradient(135deg, #8fd3f4 0%, #84fab0 100%); color: #2c3e50; }
+
+.slide-content h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.slide-content p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Botones Anterior / Siguiente del carrusel */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.6);
+}
+
+/* Puntos indicadores */
+.dot {
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 4px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #ff6b6b;
+}
+
+/* Animación de fundido */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* 👋 Sección de Bienvenida */
+.welcome-section {
+    text-align: center;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.welcome-section h2 {
+    color: #4d96ff;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.welcome-section p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* 📦 Tarjetas de Accesos Rápidos */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.06);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.card-aprende h3 { color: #ff6b6b; }
+.card-actividades h3 { color: #4d96ff; }
+.card-canciones h3 { color: #6c5ce7; }
+
+.card p {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff6b6b;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.card-actividades .btn { background-color: #4d96ff; }
+.card-canciones .btn { background-color: #6c5ce7; }
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* ⭐ Palabra del Día */
+.word-of-day {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.word-box {
+    background: #fff3cd;
+    border: 3px dashed #ffeeba;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.word-box .icon {
+    font-size: 45px;
+}
+
+.word-info h3 {
+    color: #856404;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.word-info p {
+    font-size: 16px;
+    color: #533f03;
+    margin-bottom: 5px;
+}
+
+.tip {
+    font-size: 13px;
+    color: #b8860b;
+    font-style: italic;
+}
+
+/* 📌 Pie de página */
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #ffffff;
+    color: #777;
+    font-size: 14px;
+    border-top: 1px solid #eaeaea;
+    margin-top: 50px;
+}
